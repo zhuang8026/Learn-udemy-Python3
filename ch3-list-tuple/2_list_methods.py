@@ -23,7 +23,7 @@ list2 = ['a', 'c', 'd']
 list2.append('e')
 print('list2=', list2)
 
-
+ 
 # 在list2的'a'和'c'之间插入一个 'b'
 list2.insert(1, 'b')
 print('list2=', list2)
@@ -58,8 +58,8 @@ print('list4=', list4)
 
 
 list5 = [1, 'a', 3, [1,2], 'c']
-# list5.sort(); # failed
-# list5.reverse(); # ok
+# list5.sort(); # failed (不可用，因為會比對元素的類型)
+# list5.reverse(); # ok (只是顛倒順序，不會比對元素的類型)
 list5.insert(1, 'b'); # ok
 print('list5 =', list5)
 

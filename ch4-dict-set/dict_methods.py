@@ -5,23 +5,25 @@ d = {
 }
 
 print(d.get("name"))
+print(d['Age'])
 
 
-print(d.keys())
+print("keys->", d.keys())
+print("keys->", list(d.keys())) # list(...) 函數將任何可迭代對象（如字典視圖）轉換為列表。
 
 print(d.values())
 
 print(d.items())
 
-c = d.pop('Name')
+c = d.pop('Name') #刪除指定數據 並 取出來
 
-print(c)
+print(c) # Jack
 
-print(d)
+print(d) # { 'Age': 9, 'Grade': 5 }
 
-d.clear()
+d.clear() # 清空字典
 
-print(d)
+print(d)  # {}
 
 
 # 字典的更新
@@ -46,7 +48,7 @@ d = {
 #
 # print(c)
 
-e = {**c, **d}
+e = {**c, **d} # 合併
 
 print(e)
 

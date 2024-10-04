@@ -10,6 +10,10 @@ new_str = "1. 我是" + name + "," + "今年" + str(age) + "岁了"
 
 print(new_str)
 
+# 計算 字符串 長度
+print("字符串name長度:" + str(len(name)));
+
+# 注意：
 new_str_1 = "2. 我是%s,今年%d岁了" % (name, age)
 # % => 必須是字串 or 整數
 

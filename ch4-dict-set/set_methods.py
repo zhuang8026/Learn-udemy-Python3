@@ -1,18 +1,18 @@
 # s = {1, 2, 3, 4}
 #
 # s.add(5)
-# s.add(5)
+# s.add(5) # 重複加入不會生效
 #
-# print(s)
+# print(s) # {1, 2, 3, 4, 5}
 #
 # s.remove(5)
-# # s.remove(5)
+# # s.remove(5) # 抱錯, ERROR -> 不存在的元素不會生效
 #
 # print(s)
 #
 # a = '1234512'
 #
-# s1 = set(a)
+# s1 = set(a) # 集合 -> { '1', '2', '3', '4', '5' }
 #
 # print(s1)
 
@@ -20,10 +20,10 @@
 s1 = {1, 2, 3, 4}
 s2 = {3, 4, 5, 6}
 
-print(s1 & s2)
-print(s1 | s2)
-print(s1 ^ s2)
-print(s1 - s2)
-print(s2 - s1)
+print(s1 & s2) # 交集 {3, 4}
+print(s1 | s2) # 聯集 {1, 2, 3, 4, 5, 6}
+print(s1 ^ s2) # 差集 {1, 2, 5, 6}
+print(s1 - s2) # 將s1中包含s2的去除 {1, 2}
+print(s2 - s1) # 將s2中包含s1的去除  {5, 6}
 
 

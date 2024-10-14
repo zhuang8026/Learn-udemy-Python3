@@ -36,7 +36,7 @@ print(z)
 
 
 def demo2(a):
-    global z
+    global z # global 是聲明 z 是全域變數，並非區域變數
     z = z + a
     print(z)
 

@@ -17,8 +17,9 @@
 # def test(a, b, c):
 #     print(a + b + c)
 #
-#
-# def add(x, **kwargs):
+# 
+# **kwargs 是一種特殊的語法，用來接收 “不定數量” 的關鍵字參數
+# def add(x, **kwargs): 
 #
 #     if x == 2:
 #         test(**kwargs)
@@ -34,8 +35,18 @@ def test(a, b=False):
         return a * a
 
 
-print(test(a=2, b=True))
+print("test:", test(a=2, b=True))
 
 
-def test1(**kwargs):
+def test123(**kwargs):
     pass
+
+
+def example_mixed(a, *args, **kwargs):
+    print(f"普通參數: {a}")
+    print(f"位置參數: {args}")   # 結果: (20, 30)
+                                # 傳入的是 tuple (tuple 不可變，list 可變)
+    print(f"關鍵字參數: {kwargs}") #結果: {'name': 'Alice', 'age': 25}
+                                #傳入的是 dict (key: value) 
+
+example_mixed(10, 20, 30, name="Alice", age=25)

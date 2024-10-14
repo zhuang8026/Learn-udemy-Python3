@@ -15,6 +15,9 @@ def demo1(a, b):
 def sum(a, b):
     return a + b
 
+print("sum:", sum(a = [1,2,3], b = [1,2,3]))
+print("sum:", sum(a = [1,2,3], b = [1,2,3]))
+print("sum number is {}".format(sum(a = [1,2,3], b = [1,2,3])))
 
 def my_max(a):
     if not a:

@@ -1,3 +1,5 @@
+# 繼承
+
 class Animal:
 
     def eat(self):

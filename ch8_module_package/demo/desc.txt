@@ -1,0 +1,4 @@
+如果建立一個 包？
+    1. 建立一個文件夾，文件夾中出現 “__init__.py” 
+        # vscode 需要手動建立 "__init__.py"
+        # IDLE -> python package 會自動生成

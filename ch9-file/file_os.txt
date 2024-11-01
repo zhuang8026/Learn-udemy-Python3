@@ -1,0 +1,28 @@
+1. 什麼是 os ？
+>> os 是可以直接控制 py 文件的一種手段
+
+2. 如何進入 OS 環境？
+>> mac terminal > 指定到文件位置 > 輸入安裝python版本(ex: python3.6) > import os
+
+3. OS 操作命令
+>> os.getcwd() 查看當前路徑
+>> os.listdir() 查看當前路徑所有文件
+>> os.mkdir() 創建文件夾
+    > os.mkdir('demo001')
+    > cd demo001
+    > f = open("demo1.txt", mode='x', encoding='utf8')
+    > f.write("123"\n)   
+    > done
+>> os.path.isdir('demo001') 檢查是否為文件夾
+    > True 說明是文件夾
+    > False 反之
+>> os.path.exists('test.txt') 檢查是否為文件
+    > True 說明是文件
+    > False 反之
+>> os.path.join('/xx/xxx/xx/demo', 'test.txt') 合併路徑
+    > /xx/xxx/xx/demo/test.txt
+>> os.chdir('demo001') # 進入當前目錄
+>> os.chdir('..') # 回到上一層目錄
+
+>> dir(os) 查看os全部命令
+>> help(os.chdir) 查看 chdir 說明

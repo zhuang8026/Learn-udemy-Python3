@@ -3,10 +3,10 @@ import functools
 
 def demo(f):
 
-    @functools.wraps(f)
+    @functools.wraps(f) # 保留原始函數屬性(__name__, __doc__ ....)
     def f_new(*args, **kwargs):
         """
-        this is f_new
+        this is 'f_new'
         :param args:
         :param kwargs:
         :return:
@@ -19,7 +19,7 @@ def demo(f):
 @demo
 def test1(x, y):
     """
-    this is test1
+    this is 'test1'
     :param x:
     :param y:
     :return:
@@ -27,6 +27,6 @@ def test1(x, y):
     print('x={}, y={}'.format(x, y))
 
 
-print(test1.__name__)
+print(test1.__name__) # test1
 
-print(test1.__doc__)
+print(test1.__doc__) # this is test1...

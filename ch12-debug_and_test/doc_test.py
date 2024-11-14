@@ -1,4 +1,7 @@
 def func_demo(a, b):
+    # """ + doc + """ -> 是用來描述函數的用途 
+    # func_demo.__doc__ -> 會出現 doc string
+
     """ doc test demo
     >>> func_demo(1, 2)
     3
@@ -17,7 +20,7 @@ def func_demo(a, b):
         return False
     return a + b
 
-
+# 文檔測試方法
 if __name__ == "__main__":
     import doctest
-    doctest.testmod()
+    doctest.testmod() # 會執行 ">>>" 所有的的測試內容 

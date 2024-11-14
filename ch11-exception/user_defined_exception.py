@@ -1,5 +1,6 @@
 
 
+# 自定义异常
 class MyException(Exception):
 
     pass
@@ -30,6 +31,7 @@ except MyException as error:
     print(error)
 else:
     try:
+        # with 语句會自动关闭文件，不需要手動關閉
         with open('file.log') as file:
             read_data = file.read()
     except FileNotFoundError as fnf_error:

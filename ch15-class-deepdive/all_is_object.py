@@ -3,7 +3,7 @@ def add(x, y):
     ''' return the sum of x and y'''
     return x + y
 
-
+#以下為老師在terminal上的測試結果
 """
 $ python3.7 -i all_is_object.py 
 >>> 

@@ -1,7 +1,7 @@
 from collections import deque
 import time
 
-d = deque(range(10000000))
+d = deque(range(10000000)) 
 #print(d)
 
 

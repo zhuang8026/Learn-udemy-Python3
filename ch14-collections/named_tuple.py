@@ -1,5 +1,5 @@
-s1 = ('Richard', 33)
-s2 = ('Chris', 24)
+s1 = ('Richard', 33) # 元祖
+s2 = ('Chris', 24) #  列表
 
 print(s1[0], s1[1])
 
